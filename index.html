@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Mom & Dad!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Intro / Surprise Section -->
+    <section id="intro" class="screen active">
+        <div class="spotlight-overlay"></div>
+        <div class="intro-content">
+            <h1 class="neon-text shimmer-text">A Special Surprise</h1>
+            <p class="subtitle glowing-text">For the world's best parents</p>
+
+            <div class="gift-wrapper">
+                <div class="gift-container" id="openGiftBtn">
+                    <img src="assets/3d_gift_box.png" alt="Gift Box" class="gift-box floating-aggressive">
+                    <div class="glow-ring"></div>
+                    <div class="sparkles"></div>
+                </div>
+            </div>
+
+            <p class="instruction pulse-text">Tap to Open</p>
+        </div>
+    </section>
+
+    <!-- Main Celebration Content (Hidden initially) -->
+    <main id="celebration" class="screen hidden">
+
+        <header class="hero">
+            <img src="assets/anniversary_hero_background.png" alt="Background" class="hero-bg">
+            <div class="hero-content">
+                <h1 class="mega-title">Happy <span class="gradient-text">Anniversary!</span></h1>
+                <p class="hero-sub">Nimmi & Romesh</p>
+            </div>
+        </header>
+
+        <section class="gallery-section">
+            <h2 class="section-title">Love is Timeless</h2>
+            <div class="tilt-card-container">
+                <div class="tilt-card">
+                    <img src="assets/parents.jpg" alt="Mom and Dad">
+                    <div class="card-overlay">
+                        <h3>Forever Together</h3>
+                    </div>
+                </div>
+            </div>
+            <p class="love-note">
+                "May your love continue to grow stronger with each passing year. You are an inspiration to us all.
+                Wishing you endless joy, laughter, and happiness!"
+            </p>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ by your favorite child</p>
+        </footer>
+    </main>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
